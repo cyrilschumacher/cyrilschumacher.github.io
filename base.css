@@ -1,0 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url('http://yui.yahooapis.com/3.5.0/build/cssreset/cssreset-min.css');
+@import url('http://yui.yahooapis.com/3.5.0/build/cssbase/cssbase-min.css');
+@import url('http://yui.yahooapis.com/3.5.0/build/cssfonts/cssfonts-min.css');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 1.5rem 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    width: inherit;
+}
+
+h1 {
+    color: #8C8C8C;
+    font-size: 5rem;
+}
