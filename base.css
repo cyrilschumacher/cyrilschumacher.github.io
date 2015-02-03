@@ -1,27 +1,47 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url('http://yui.yahooapis.com/3.5.0/build/cssreset/cssreset-min.css');
 @import url('http://yui.yahooapis.com/3.5.0/build/cssbase/cssbase-min.css');
 @import url('http://yui.yahooapis.com/3.5.0/build/cssfonts/cssfonts-min.css');
 
-html {
-    font-size: 62.5%;
-}
 
-body {
-    font: 1.5rem 'Open Sans', sans-serif;
-    height: 100%;
-    width: 100%;
-}
+html { font-size: 62.5% }
+html, body { height: 100%; width: 100% }
+body { font: 1.2rem 'Open Sans', sans-serif }
 
 header {
+    position: relative;
     align-items: center;
     display: flex;
     height: inherit;
     justify-content: center;
+    text-align: center;
     width: inherit;
 }
 
 h1 {
-    color: #8C8C8C;
-    font-size: 5rem;
+    color: #3bafda;
+    font-size: 8rem;
+    font-weight: 900;
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
 }
+
+h2 {
+    color: #8c8c8c;
+    font-size: 5rem;
+    margin: -4rem 0 5rem;
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.button {
+    border: 1px solid #8c8c8c;
+    padding: 2rem 4rem; 
+    text-decoration: none;
+    transition: background 150ms;
+}
+
+.button-text { text-transform: uppercase; color: #8c8c8c }
+.button:hover, .button:focus { background: #3bafda; border: none }
+.button:hover .button-text, .button:focus .button-text { color: #fff }
